@@ -51,7 +51,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   column-gap: 1rem;
 }
 .grid-cardI {
@@ -203,74 +202,13 @@
 }
 
 @media (max-width: 480px) {
-  .main-container {
+  grid-container {
     width: 100%;
-    padding: 1.5rem 1rem;
-
-    .hero-section {
-      width: 100%;
-      row-gap: 0.5rem;
-    }
-
-    .dfaster h1 {
-      font-size: 0.8rem;
-    }
-
-    .dfaster h2 {
-      font-size: 1.8rem;
-      text-align: center;
-    }
-
-    .grid-container {
-      flex-direction: column;
-      row-gap: 1.5rem;
-      column-gap: 0;
-    }
-
-    .grid-cardI,
-    .grid-cardII,
-    .grid-cardIII {
-      width: 100%;
-      height: auto;
-      padding: 1rem;
-    }
-
-    .heading h1 {
-      font-size: 0.8rem;
-    }
-
-    .paragraph p {
-      font-size: 0.7rem;
-      line-height: 1.2rem;
-      text-align: justify;
-    }
-
-    .performance-stat {
-      flex-direction: column;
-      row-gap: 1rem;
-    }
-
-    .performance h4 {
-      font-size: 1.2rem;
-    }
-
-    .performance p {
-      font-size: 0.8rem;
-    }
-
-    .bar-chart {
-      gap: 4px;
-      height: 50px;
-    }
-
-    .bar {
-      width: 4px;
-    }
-
-    .grid-card1 img,
-    .grid-cardIII img {
-      width: 100%;
-      height: auto;
-    }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
   }
 }
